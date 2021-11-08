@@ -1,0 +1,76 @@
+/* 1.- Los enlaces son verdes porque la regla de estilo que utiliza el selector "ul.news li.news__item a.news__item-link" es mas especifica que la regla que utiliza el selector "a"  */
+
+/* 2.- Deberiamos añadir:
+body ul.news li.news__item a.news__item-link {
+    color: red;
+}
+ O tambien podriamos utilizar el mismo selector cambiando el color por rojo, pero al estar mas abajo en el codigo se aplicaria por su posicion.
+*/
+
+/* 3.- Los enlaces se ven rojos porque los selectores especificos (que utilizaban las etiquetas html) ya no funcionan al haber sustituido unas etiquetas por otras, la regla que utiliza la "a" sigue funcionando y aplica sus reglas */
+
+/* 4.- 
+.news {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+}
+news__item-link {
+  color: red;
+}
+.news .news__item {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 10px;
+}
+.news .news__item + .news__item {
+  border-top: 1px solid #ccc;
+}
+.news .news__item:nth-child(2n) {
+  background: #eee;
+}
+.news .news__item:last-child {
+  border-bottom: 1px solid #ccc;
+}
+.news .news__item .news__item-title {
+  margin: 0 0 .25em;
+  font-size: 20px;
+}
+.news .news__item .news__item-link {
+  color: green;
+}
+*/
+
+/* 5.- Es indiferente las etiquetas que uses, al estar utilizando class, las reglas de estilo se mantienen*/
+
+ul.news {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+  }
+  a {
+    color: red;
+  }
+  ul.news li.news__item {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 10px;
+  }
+  ul.news li.news__item + li.news__item {
+    border-top: 1px solid #ccc;
+  }
+  ul.news li.news__item:nth-child(2n) {
+    background: #eee;
+  }
+  ul.news li.news__item:last-child {
+    border-bottom: 1px solid #ccc;
+  }
+  ul.news li.news__item h2.news__item-title {
+    margin: 0 0 .25em;
+    font-size: 20px;
+  }
+  ul.news li.news__item a.news__item-link {
+    color: green;
+  }

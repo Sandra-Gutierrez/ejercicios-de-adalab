@@ -1,0 +1,23 @@
+/* .img_ilustracion{
+    width: 100%;
+    padding: 100px;
+    box-sizing: border-box;
+}
+.caja1{
+    background-color: aqua;
+    width: 650px;
+    height: 650px;
+} */
+.caja2{
+    background-color: aqua;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+.pCentro{
+    width: 50%;
+}

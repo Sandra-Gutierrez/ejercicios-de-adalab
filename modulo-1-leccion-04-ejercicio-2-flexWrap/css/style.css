@@ -1,0 +1,17 @@
+
+.contenedorLista{
+  list-style: none;
+  padding: 0;
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+li.itemLista {
+  width: 200px;
+  height: 200px;
+}
+.itemLista img{
+  width: 200px;
+  height: auto;
+}

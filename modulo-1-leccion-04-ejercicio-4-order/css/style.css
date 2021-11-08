@@ -1,0 +1,24 @@
+
+.contenedorNoticias{
+  background-color: aqua;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap ;
+}
+.itemNoticias{
+  background-color: blanchedalmond;
+    box-sizing: border-box;
+    width: 50%;
+    text-align: justify;
+    padding: 20px;
+}
+
+.itemNoticias img{
+  width: 100%;
+}
+.noticia5{
+  order: -1;
+  width: 100%;
+}

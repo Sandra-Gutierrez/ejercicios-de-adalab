@@ -1,0 +1,12 @@
+.img_ilustracion{
+    width: 100%;
+}
+.caja_ilustracion{
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    border: 5px solid red;
+    background-color: rosybrown;
+    box-sizing: border-box;
+    margin: auto;
+}

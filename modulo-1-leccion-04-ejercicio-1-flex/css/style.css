@@ -1,0 +1,15 @@
+
+.contenedor{
+  background-color: aquamarine;
+  border: 1px solid black;
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.items{
+  background-color: palevioletred;
+  border: 1px solid black;
+}
