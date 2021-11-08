@@ -1,0 +1,17 @@
+body{
+  margin: 0px;
+}
+.cabecera{
+  background-color: purple;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0px;
+  z-index: 99;
+}
+.main{
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  top: 60px;
+}
