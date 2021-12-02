@@ -1,0 +1,22 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+}
+
+form{
+  margin: 0 auto;
+  width: 80%;
+}
+input{
+	display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 5px;
+  padding: 5px;
+}
+.box_gender{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

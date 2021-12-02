@@ -1,0 +1,17 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+}
+
+.main {
+  background-color: pink;
+}
+.main__title {
+  color: red;
+}
+.boldWave{
+  font-size: 45px;
+  font-weight: bold;
+  text-shadow: 5px 5px 5px black;
+}

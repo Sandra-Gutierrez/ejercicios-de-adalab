@@ -1,0 +1,38 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+}
+
+body{
+  color: white;
+  text-transform: uppercase;
+}
+.header{
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+.menu{
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+.content{
+  background-color: lightcoral;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+.footer{
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}

@@ -1,0 +1,24 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+}
+.form{
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+input{
+  width: 100%;
+  padding: 5px;
+	display: block;
+  background-color: whitesmoke;
+}
+label{
+  
+  
+}
+input:focus::placeholder{
+  color: transparent;
+}
+

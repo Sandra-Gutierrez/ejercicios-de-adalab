@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Queries</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+
+    <h1>Create an account</h1>
+    <p>It´s free and always will be.</p>
+
+    <form action="https://adalab-server-form.herokuapp.com/" method="post">
+
+      <label for="firstName"></label>
+      <input placeholder="First name" id="firstName" type="text" name="firstName" required class="form__item--corto"/>
+
+      <label for="lastName"></label>
+      <input placeholder="Surname" id="lastName" type="text" name="lastName" class="form__item--corto"/>
+
+      <label for="emailAddress"></label>
+      <input type="email" id="emailAddress" name="emailAddress" placeholder="Email" required />
+
+      <label for="emailAddress"></label>
+      <input type="email" id="emailAddress" name="emailAddress" placeholder="Re-enter mail" required />
+
+      <label for="password"></label>
+      <input type="password" id="password" name="password" placeholder="New password"  required />
+
+
+      <label for="birthday">Birthday:</label>
+      <select id="day" name="day" placeholder="Day">
+        <option value="36">Day</option>
+        <option value="37">37</option>
+        <option value="38">38</option>
+        <option value="39">39</option>
+        <option value="40">40</option>
+        <option value="41">41</option>
+        <option value="42">42</option>
+        <option value="43">43</option>
+        <option value="44">44</option>
+        <!-- ... continuación de la serie -->
+      </select>
+      <select id="month" name="month">
+        <option value="36">Month</option>
+        <option value="37">37</option>
+        <option value="38">38</option>
+        <option value="39">39</option>
+        <option value="40">40</option>
+        <option value="41">41</option>
+        <option value="42">42</option>
+        <option value="43">43</option>
+        <option value="44">44</option>
+        <!-- ... continuación de la serie -->
+      </select>
+      <select id="year" name="year">
+        <option value="36">Year</option>
+        <option value="37">37</option>
+        <option value="38">38</option>
+        <option value="39">39</option>
+        <option value="40">40</option>
+        <option value="41">41</option>
+        <option value="42">42</option>
+        <option value="43">43</option>
+        <option value="44">44</option>
+        <!-- ... continuación de la serie -->
+      </select>
+
+    <div class="box_gender">
+      <label for="paymentmethod1">Female</label>
+      <input
+          id="paymentmethod1"
+          type="radio"
+          value="debitcard"
+          name="paymentmethods"
+        />
+    </div>
+    <div class="box_gender">
+      <label for="paymentmethod2">Male</label>
+      <input
+          id="paymentmethod2"
+          type="radio"
+          value="creditcard"
+          name="paymentmethods"
+        />
+    </div>
+
+    <label for="comments"></label>
+    <textarea id="comments" name="comments" rows="8" cols="80" placeholder="Deja tu comentario"></textarea>
+
+    <label for="age">Altura:</label> <input type="number" id="age" name="age" min="50" max="250" placeholder="150cm"/>
+
+
+    <label for="flightoption1">Acepto las condiciones
+    </label>
+      <input
+        id="flightoption1"
+        type="checkbox"
+        value="chooseseat"
+        name="flightoptions"
+      />
+   
+
+      <input type="submit" value="Create an account" />
+
+      <input type="reset" value="Restaurar valores por defecto" />
+    </form>
+      
+  </body>
+</html>

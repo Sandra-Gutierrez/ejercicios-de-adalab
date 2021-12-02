@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Queries</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+
+    <form action="https://adalab-server-form.herokuapp.com/" method="post">
+
+      <label for="firstName">Nombre</label>
+      <input placeholder="Escribe aquí tu nombre de pila." id="firstName" type="text" name="firstName" required />
+
+      <label for="lastName">Apellido</label>
+      <input placeholder="Escribe aquí tus apellidos." id="lastName" type="text" name="lastName" />
+
+      <label for="emailAddress">Correo electrónico</label>
+      <input type="email" id="emailAddress" name="emailAddress" placeholder="Escribe aquí tu email." required />
+
+      <label for="ciudad">Ciudad</label>
+      <input placeholder="Escribe donde vives." id="ciudad" type="text" name="ciudad" value="Madrid"/>
+
+      <label for="telephone">Teléfono</label>
+      <input type="tel" id="telephone" name="telephone" required />
+
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" name="password" required />
+
+      <input type="submit" value="Enviar" />
+    </form>
+      
+  </body>
+</html>

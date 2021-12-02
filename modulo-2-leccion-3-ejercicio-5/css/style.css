@@ -1,0 +1,21 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+}
+
+.success{
+  background-color: aquamarine;
+  border: 1px solid green;
+  color: green;
+}
+.error{
+  background-color: pink;
+  border: 1px solid red;
+  color: red;
+}
+.warning{
+  background-color: beige;
+  border: 1px solid rgb(240, 216, 0);
+  color: rgb(240, 216, 0);
+}
