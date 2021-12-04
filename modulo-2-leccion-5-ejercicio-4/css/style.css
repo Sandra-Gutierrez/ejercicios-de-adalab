@@ -1,0 +1,15 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+}
+.div{
+  width: 80%;
+  margin: 0 auto;
+}
+.colorPink{
+  background-color: plum;
+}
+.colorGreen{
+  background-color: yellowgreen;
+}

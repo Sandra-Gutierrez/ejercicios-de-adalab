@@ -7,5 +7,5 @@ function getEl( a ){
  
 }
 
-const btnEl = getEl(".ul");
+const btnEl = getEl(".btn1");
 console.log (btnEl);

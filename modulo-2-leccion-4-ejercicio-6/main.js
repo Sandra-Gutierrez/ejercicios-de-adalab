@@ -3,6 +3,7 @@
 function getEl( a ){
 
   let elementHtml = document.querySelector( a )
+  console.log (a);
   if (elementHtml === null){
     console.error (`No existe ningún elemento con clase, id o tag llamado ${a} `);
   } else{
@@ -11,5 +12,5 @@ function getEl( a ){
  
 }
 
-const btnEl = getEl(".u");
+const btnEl = getEl(".ul");
 console.log (btnEl);

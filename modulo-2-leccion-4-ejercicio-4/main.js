@@ -10,4 +10,4 @@ function calcularPar(a){
 
 }
 
-console.log( calcularPar(20));
+console.log( calcularPar(21));
