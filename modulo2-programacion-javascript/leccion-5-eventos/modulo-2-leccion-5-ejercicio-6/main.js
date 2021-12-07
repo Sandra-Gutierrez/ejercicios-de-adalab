@@ -4,16 +4,8 @@
 const inputName = document.querySelector('.js-inputName');
 const textArea = document.querySelector('.js-textArea');
 
-// Sin usar currentTarget, es inmediato.
-
-/* function writeLetter(event){
-   const letter = event.key;
-   textArea.innerHTML += letter;
-}
-
-inputName.addEventListener('keydown', writeLetter); */
-
-// Usando currentTarget, no es inmediato.
+// Usando currentTarget, uso keyup (no keydown) 
+// para asegurarme de recoger el valor del imput solo cuando ya este definido
 
 function writeLetter(event){
 
@@ -22,4 +14,4 @@ function writeLetter(event){
 
 }
 
-inputName.addEventListener('keydown', writeLetter);
+inputName.addEventListener('keyup', writeLetter);

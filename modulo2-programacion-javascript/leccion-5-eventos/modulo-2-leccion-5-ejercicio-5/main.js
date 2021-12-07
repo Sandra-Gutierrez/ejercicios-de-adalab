@@ -23,4 +23,4 @@ function changeColor(event){
 }
 
 
-window.addEventListener('keydown', changeColor);
+body.addEventListener('keydown', changeColor);
