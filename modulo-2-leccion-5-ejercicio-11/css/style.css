@@ -1,0 +1,30 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+}
+a{
+  color: whitesmoke;
+  text-decoration: none;
+}
+.js-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 25px 40px;
+  background-color: black;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+.js-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+section{
+  width: 60%;
+  margin: 0 auto;
+  line-height: 1.5;
+  margin-top: 80px;
+}

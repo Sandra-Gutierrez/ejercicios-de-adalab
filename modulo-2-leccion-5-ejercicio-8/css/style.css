@@ -1,0 +1,14 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+}
+.button{
+  background-color: black;
+  color: whitesmoke;
+  padding: 15px 60px;
+  border: none;
+}
+.buttonPurple{
+  background-color: purple;
+}
