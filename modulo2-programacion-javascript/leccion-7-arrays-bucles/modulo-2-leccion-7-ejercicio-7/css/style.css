@@ -1,0 +1,16 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+}
+body {
+  margin: 0;
+  font-family: Arial, san-serif;
+}
+
+.button{
+  color: whitesmoke;
+  background-color: black;
+  border: none;
+  padding: 5px 40px;
+}
