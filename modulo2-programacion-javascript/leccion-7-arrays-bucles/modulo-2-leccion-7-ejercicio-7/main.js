@@ -33,9 +33,9 @@ const adalabers = [
 
 // 1) Función countAdalabers: devuelve el número de adalabers.
 
-function countAdalabers( array ){
+function countAdalabers( arrAdalabers ){
 
-  const numAdalabers = array.length;
+  const numAdalabers = arrAdalabers.length;
   return `El número total de adalabers es: ${numAdalabers}`
 
 }
@@ -44,14 +44,14 @@ console.log(countAdalabers( adalabers ));
 
 // 2) Función averageAge: devuelve la media de edad.
 
-function averageAge( array ){
+function averageAge( arrAdalabers ){
 
   let media = 0;
   let num = 0;
 
-  for (let i = 0; i < array.length; i++) {
-    num += array[i].age;
-    media = num / array.length;
+  for (let i = 0; i < arrAdalabers.length; i++) {
+    num += arrAdalabers[i].age;
+    media = num / arrAdalabers.length;
   }
 
   return `La media de edad de las adalabers es: ${media} años`
@@ -61,7 +61,9 @@ console.log(averageAge( adalabers ));
 
 // 3) Función theYoungest: devuelve el nombre de la más joven.
 
-function theYoungest( arrAdalabers ){
+// Utilizando un bucle for:
+
+function theYoungestFor( arrAdalabers ){
 
   let youngest = arrAdalabers[0].nombre;
   let ageRef = arrAdalabers[0].age;
@@ -73,10 +75,31 @@ function theYoungest( arrAdalabers ){
     }
   }
 
-  return `La adalaber mas joven es: ${youngest}.`;
+  return `BUCLE FOR - La adalaber mas joven es: ${youngest}.`;
+} 
+
+console.log(theYoungestFor( adalabers ));
+
+
+// Utilizando un bucle for of:
+
+function theYoungestForOf( arrAdalabers ){
+
+  let youngest = arrAdalabers[0].nombre;
+  let ageRef = arrAdalabers[0].age;
+
+  for (const student of arrAdalabers) {
+    if(student.age < ageRef){
+      ageRef = student.age;
+      youngest = student.nombre;
+    }
+  }
+
+  return `BUCLE FOR OF - La adalaber mas joven es: ${youngest}.`;
 }
 
-console.log(theYoungest( adalabers ));
+console.log(theYoungestForOf( adalabers ));
+
 
 
 // 4) Función countDesigners: devuelve el número de las diseñadoras.
