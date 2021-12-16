@@ -13,14 +13,15 @@ function handlerClickGetOrgData() {
     .then(orgData => {
       console.log(orgData);
       const repos = orgData.repos_url;
-      return fetch("https://api.github.com/orgs/Adalab/repos");
+      console.log(repos);
+      return fetch(repos);
     })
     .then(reposAdalab => reposAdalab.json())
     .then(repoName => {
       console.log(repoName);
-      ulDataList.innerHTML = `
-      <li>${repoName.name}</li>
-      `
+      for(const repo of repoName){
+        ulDataList.innerHTML += `<li>${repo.name}</li>`;
+      }
     })
 }
 
