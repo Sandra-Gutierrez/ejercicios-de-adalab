@@ -44,8 +44,37 @@ function navTree(height) {
   }
 }
 
-console.log('★');
+function addStar(item){
+  let star = '';
+  for(let i = 1; i <= 1; i++){
+    for(let j = 1; j <= item; j++){
+      if(j < i){
+        star += '';
+      }else{
+        star += '★';
+      }
+    }
+  }
+  console.log(star);
+}
+
+function addColumn(item){
+  let column = '';
+  for(let i = 1; i <= 1; i++){
+    for(let j = 1; j <= item; j++){
+      if(j < i){
+        column += '';
+      }else{
+        column += '|';
+      }
+    }
+  }
+  console.log(column);
+}
+/* console.log('★'); */
+addStar(4);
 navTree(5);
-console.log('|');
+addColumn(6);
+/* console.log('|'); */
 
 // Falta colocar la estrella y el tronco de forma simetrica ¿? (me explota la cabeza)
