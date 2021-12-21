@@ -4,11 +4,14 @@
 // Si la usuaria elige Madrid, haz que en cada imagen se muestre una foto de Madrid
 // Haz lo mismo para París y Nueva York
 
+// Crear element img, añadir setAttribute con 2 parametros (src y alt)
 
 const optionSelect = document.querySelector('.js-select');
-const imgCity1 = document.querySelector('.js-imgCity1');
+const divImg = document.querySelector('.js-div');
+
+/* const imgCity1 = document.querySelector('.js-imgCity1');
 const imgCity2 = document.querySelector('.js-imgCity2');
-const imgCity3 = document.querySelector('.js-imgCity3');
+const imgCity3 = document.querySelector('.js-imgCity3'); */
 
 function selectCity(){
   const citySelect = optionSelect.value;
@@ -16,19 +19,30 @@ function selectCity(){
   return citySelect;
 }
 
+
+
 function renderImg( city ){
+
+  img.setAttribute('src', ``);
+  
   if( city === 'madrid'){
-    imgCity1.src = "./img/madrid1.jpg";
-    imgCity2.src = "./img/madrid2.jpg";
-    imgCity3.src = "./img/madrid3.jpg";
+    for(let i = 1 ; i <= 3 ; i++){
+      const img = document.createElement('img');
+      divImg.appendChild(img);
+      img.setAttribute('src', `./img/madrid${i}.jpg`);
+    }
   }else if( city === 'paris'){
-    imgCity1.src = "./img/paris1.jpg";
-    imgCity2.src = "./img/paris2.jpg";
-    imgCity3.src = "./img/paris3.jpg";
+    for(let i = 1 ; i <= 3 ; i++){
+      const img = document.createElement('img');
+      divImg.appendChild(img);
+      img.setAttribute('src', `./img/paris${i}.jpg`);
+    }
   }else if( city === 'nueva york'){
-    imgCity1.src = "./img/ny1.jpg";
-    imgCity2.src = "./img/ny2.jpg";
-    imgCity3.src = "./img/ny3.jpg";
+    for(let i = 1 ; i <= 3 ; i++){
+      const img = document.createElement('img');
+      divImg.appendChild(img);
+      img.setAttribute('src', `./img/ny${i}.jpg`);
+    }
   }
 }
 

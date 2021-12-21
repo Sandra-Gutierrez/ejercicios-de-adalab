@@ -1,6 +1,6 @@
 # ejercicios-de-adalab
 
-Mis ejercicios resueltos del temario de Adalab. Incluidos todos los importantes y los que no son codepen.
+Ejercicios resueltos del temario de Adalab a mi manera =>
 
 ## Módulo 1: Maquetación
 
@@ -29,3 +29,4 @@ Mis ejercicios resueltos del temario de Adalab. Incluidos todos los importantes 
 - [x] Tema 1.10
 - [x] Tema 1.11
 - [x] Tema 1.12
+- [x] Tema 1.13
