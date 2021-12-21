@@ -6,7 +6,7 @@ const buttonNum = document.querySelector('.js-num');
 const resultText = document.querySelector('.js-result');
 const img = document.querySelector("img");
 
-function getDogImage() {
+/* function getDogImage() {
   let randomNum = 0;
   let nameRaza = '';
   fetch("https://api.rand.fun/number/integer?max=95/")
@@ -16,7 +16,8 @@ function getDogImage() {
       console.log(randomNum);
       return randomNum;
     })
-    fetch("https://dog.ceo/api/breeds/list")
+
+  fetch("https://dog.ceo/api/breeds/list")
     .then(response => response.json())
     .then(data => {
       console.log(data.message);
@@ -29,7 +30,32 @@ function getDogImage() {
     .then(data => {
       img.src = data.message;
     })
-}
+} */
+
+function getDogImage(){
+
+  fetch("https://dog.ceo/api/breeds/list")
+    .then((response) => response.json())
+    .then ((data) => {
+      console.log(data.message);
+      const arrDog = data.message;
+      return fetch("https://api.rand.fun/number/integer?max=95/")
+        .then((response) => response.json())
+        .then ((data) => {
+          console.log(data.result);
+          const randomNum = data.result;
+          const razaDog = arrDog[randomNum];
+          console.log(razaDog);
+          resultText.innerHTML = razaDog;
+          return fetch('https://dog.ceo/api/breed/' + razaDog + '/images/random')
+          .then((response) => response.json())
+          .then ((data) => {
+            img.src = data.message;
+          })
+        })
+    })
+} 
+
 buttonNum.addEventListener("click", getDogImage);
 
 

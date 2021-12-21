@@ -26,3 +26,6 @@ Mis ejercicios resueltos del temario de Adalab. Incluidos todos los importantes 
 - [x] Tema 1.6
 - [x] Tema 1.7
 - [x] Tema 1.9
+- [x] Tema 1.10
+- [x] Tema 1.11
+- [x] Tema 1.12
