@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+a{
+  text-decoration: none;
+}
+/********************** 
+**** variables css **** 
+**********************/
+:root{
+	--colorTextMenu: #4a4a4a;
+	--colorTitleMain: #3CDBC0;
+	--colorBackground: #FFFFFF;
+}
+
+/********************** 
+**** Generales **** 
+**********************/
+body{
+	font-family: 'Rubik', sans-serif;
+}
+/********************** 
+**** Header **** 
+**********************/
+@import url('./header.scss');
+
+/********************** 
+********* main ********* 
+**********************/
+@import url('./main.scss');

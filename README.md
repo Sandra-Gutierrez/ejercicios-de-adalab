@@ -30,3 +30,9 @@ Ejercicios resueltos del temario de Adalab a mi manera =>
 - [x] Tema 1.11
 - [x] Tema 1.12
 - [x] Tema 1.13
+
+## Módulo 3: React
+
+- React Starter Kit
+- [x] Tema 1.1
+- [x] Tema 1.2
